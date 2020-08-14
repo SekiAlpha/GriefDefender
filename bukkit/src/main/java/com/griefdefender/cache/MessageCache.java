@@ -80,6 +80,9 @@ public class MessageCache {
     public Component CLAIMINFO_UI_CLAIM_EXPIRATION;
     public Component CLAIMINFO_UI_CLICK_ADMIN;
     public Component CLAIMINFO_UI_CLICK_BANK;
+    public Component CLAIMINFO_UI_CLICK_FAREWELL;
+    public Component CLAIMINFO_UI_CLICK_GREETING;
+    public Component CLAIMINFO_UI_CLICK_NAME;
     public Component CLAIMINFO_UI_CLICK_TOGGLE;
     public Component CLAIMINFO_UI_DENY_MESSAGES;
     public Component CLAIMINFO_UI_FLAG_OVERRIDES;
@@ -100,6 +103,7 @@ public class MessageCache {
     public Component CLAIMINFO_UI_TITLE_CLAIMINFO;
     public Component CLAIMINFO_UI_TOWN_SETTINGS;
     public Component CLAIMLIST_UI_CLICK_INFO;
+    public Component CLAIMLIST_UI_CLICK_PLAYER_LIST;
     public Component CLAIMLIST_UI_CLICK_PURCHASE;
     public Component CLAIMLIST_UI_CLICK_RENT;
     public Component CLAIMLIST_UI_CLICK_VIEW_CHILDREN;
@@ -128,6 +132,7 @@ public class MessageCache {
     public Component COMMAND_PET_TRANSFER_READY;
     public Component COMMAND_PET_TRANSFER_CANCEL;
     public Component COMMAND_WORLDEDIT_MISSING;
+    public Component CONFIRM_NOT_FOUND;
     public Component CREATE_CANCEL;
     public Component CREATE_CUBOID_DISABLED;
     public Component CREATE_OVERLAP;
@@ -145,6 +150,8 @@ public class MessageCache {
     public Component ECONOMY_BLOCK_NOT_AVAILABLE;
     public Component ECONOMY_BLOCK_ONLY_BUY;
     public Component ECONOMY_BLOCK_ONLY_SELL;
+    public Component ECONOMY_BLOCK_TRANSFER_CANCEL;
+    public Component ECONOMY_BLOCK_TRANSFER_WARNING;
     public Component ECONOMY_CLAIM_NOT_FOR_SALE;
     public Component ECONOMY_CLAIM_RENT_CANCEL_CONFIRMATION;
     public Component ECONOMY_CLAIM_RENT_RESTORE_CANCEL_CONFIRMATION;
@@ -153,6 +160,7 @@ public class MessageCache {
     public Component ECONOMY_CLAIM_RENT_OWNER_NOT_RENTING;
     public Component ECONOMY_CLAIM_SALE_CANCEL_CONFIRMATION;
     public Component ECONOMY_CLAIM_SALE_CANCELLED;
+    public Component ECONOMY_MODE_NOT_ENABLED;
     public Component ECONOMY_NOT_INSTALLED;
     public Component ECONOMY_SIGN_RENT_DAYS_LEFT;
     public Component ECONOMY_SIGN_RENT_DESCRIPTION;
@@ -177,6 +185,8 @@ public class MessageCache {
     public Component FLAG_DESCRIPTION_CUSTOM_DAMAGE_ANIMALS;
     public Component FLAG_DESCRIPTION_CUSTOM_END_CRYSTAL_USE;
     public Component FLAG_DESCRIPTION_CUSTOM_ENDERMAN_GRIEF;
+    public Component FLAG_DESCRIPTION_CUSTOM_ENTITY_ARMORSTAND_DAMAGE;
+    public Component FLAG_DESCRIPTION_CUSTOM_ENTITY_ITEMFRAME_DAMAGE;
     public Component FLAG_DESCRIPTION_CUSTOM_EXP_DROP;
     public Component FLAG_DESCRIPTION_CUSTOM_FALL_ENTITY_DAMAGE;
     public Component FLAG_DESCRIPTION_CUSTOM_FALL_PLAYER_DAMAGE;
@@ -201,6 +211,7 @@ public class MessageCache {
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_BLOCK_PLACE;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_DAMAGE;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ENDERPEARL_INTERACT;
+    public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ENDPORTAL_USE;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ENTER;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ENTITY_INTERACT;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_EXIT;
@@ -209,11 +220,12 @@ public class MessageCache {
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ITEMHANGING_PLACE;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ITEM_DROP;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_ITEM_PICKUP;
+    public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_NETHERPORTAL_USE;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_TELEPORT_FROM;
     public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_TELEPORT_TO;
+    public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_VILLAGER_DAMAGE;
     public Component FLAG_DESCRIPTION_CUSTOM_PISTON_ITEM_SPAWN;
     public Component FLAG_DESCRIPTION_CUSTOM_PISTON_USE;
-    public Component FLAG_DESCRIPTION_CUSTOM_PLAYER_PORTAL_USE;
     public Component FLAG_DESCRIPTION_CUSTOM_PVP;
     public Component FLAG_DESCRIPTION_CUSTOM_RIDE;
     public Component FLAG_DESCRIPTION_CUSTOM_SLEEP;
@@ -420,7 +432,6 @@ public class MessageCache {
     public Component PERMISSION_PLAYER_VIEW_OTHERS;
     public Component PERMISSION_TAX;
     public Component PERMISSION_VISUAL_CLAIMS_NEARBY;
-    public Component PLAYERINFO_UI_TITLE;
     public Component PLUGIN_EVENT_CANCEL;
     public Component PLUGIN_RELOAD;
     public Component PVP_CLAIM_NOT_ALLOWED;
@@ -531,6 +542,9 @@ public class MessageCache {
         CLAIMINFO_UI_CLAIM_EXPIRATION = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-claim-expiration");
         CLAIMINFO_UI_CLICK_ADMIN = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-click-admin");
         CLAIMINFO_UI_CLICK_BANK = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-click-bank");
+        CLAIMINFO_UI_CLICK_FAREWELL = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-click-farewell");
+        CLAIMINFO_UI_CLICK_GREETING = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-click-greeting");
+        CLAIMINFO_UI_CLICK_NAME = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-click-name");
         CLAIMINFO_UI_CLICK_TOGGLE = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-click-toggle");
         CLAIMINFO_UI_DENY_MESSAGES = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-deny-messages");
         CLAIMINFO_UI_FLAG_OVERRIDES = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-flag-overrides");
@@ -551,6 +565,7 @@ public class MessageCache {
         CLAIMINFO_UI_TITLE_CLAIMINFO = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-title-claiminfo");
         CLAIMINFO_UI_TOWN_SETTINGS = MessageStorage.MESSAGE_DATA.getMessage("claiminfo-ui-town-settings");
         CLAIMLIST_UI_CLICK_INFO = MessageStorage.MESSAGE_DATA.getMessage("claimlist-ui-click-info");
+        CLAIMLIST_UI_CLICK_PLAYER_LIST = MessageStorage.MESSAGE_DATA.getMessage("claimlist-ui-click-player-list");
         CLAIMLIST_UI_CLICK_PURCHASE = MessageStorage.MESSAGE_DATA.getMessage("claimlist-ui-click-purchase");
         CLAIMLIST_UI_CLICK_RENT = MessageStorage.MESSAGE_DATA.getMessage("claimlist-ui-click-rent");
         CLAIMLIST_UI_CLICK_VIEW_CHILDREN = MessageStorage.MESSAGE_DATA.getMessage("claimlist-ui-click-view-children");
@@ -579,6 +594,7 @@ public class MessageCache {
         COMMAND_PET_TRANSFER_READY = MessageStorage.MESSAGE_DATA.getMessage("command-pet-transfer-ready");
         COMMAND_PET_TRANSFER_CANCEL = MessageStorage.MESSAGE_DATA.getMessage("command-pet-transfer-cancel");
         COMMAND_WORLDEDIT_MISSING = MessageStorage.MESSAGE_DATA.getMessage("command-worldedit-missing");
+        CONFIRM_NOT_FOUND = MessageStorage.MESSAGE_DATA.getMessage("confirm-not-found");
         CREATE_CANCEL = MessageStorage.MESSAGE_DATA.getMessage("create-cancel");
         CREATE_CUBOID_DISABLED = MessageStorage.MESSAGE_DATA.getMessage("create-cuboid-disabled");
         CREATE_OVERLAP = MessageStorage.MESSAGE_DATA.getMessage("create-overlap");
@@ -596,6 +612,8 @@ public class MessageCache {
         ECONOMY_BLOCK_NOT_AVAILABLE = MessageStorage.MESSAGE_DATA.getMessage("economy-block-not-available");
         ECONOMY_BLOCK_ONLY_BUY = MessageStorage.MESSAGE_DATA.getMessage("economy-block-only-buy");
         ECONOMY_BLOCK_ONLY_SELL = MessageStorage.MESSAGE_DATA.getMessage("economy-block-only-sell");
+        ECONOMY_BLOCK_TRANSFER_CANCEL = MessageStorage.MESSAGE_DATA.getMessage("economy-block-transfer-cancel");
+        ECONOMY_BLOCK_TRANSFER_WARNING = MessageStorage.MESSAGE_DATA.getMessage("economy-block-transfer-warning");
         ECONOMY_CLAIM_NOT_FOR_SALE = MessageStorage.MESSAGE_DATA.getMessage("economy-claim-not-for-sale");
         ECONOMY_CLAIM_RENT_CANCEL_CONFIRMATION = MessageStorage.MESSAGE_DATA.getMessage("economy-claim-rent-cancel-confirmation");
         ECONOMY_CLAIM_RENT_RESTORE_CANCEL_CONFIRMATION = MessageStorage.MESSAGE_DATA.getMessage("economy-claim-rent-restore-cancel-confirmation");
@@ -604,6 +622,7 @@ public class MessageCache {
         ECONOMY_CLAIM_RENT_OWNER_NOT_RENTING = MessageStorage.MESSAGE_DATA.getMessage("economy-claim-rent-owner-not-renting");
         ECONOMY_CLAIM_SALE_CANCEL_CONFIRMATION = MessageStorage.MESSAGE_DATA.getMessage("economy-claim-sale-cancel-confirmation");
         ECONOMY_CLAIM_SALE_CANCELLED = MessageStorage.MESSAGE_DATA.getMessage("economy-claim-sale-cancelled");
+        ECONOMY_MODE_NOT_ENABLED = MessageStorage.MESSAGE_DATA.getMessage("economy-mode-not-enabled");
         ECONOMY_NOT_INSTALLED = MessageStorage.MESSAGE_DATA.getMessage("economy-not-installed");
         ECONOMY_SIGN_RENT_DESCRIPTION = MessageStorage.MESSAGE_DATA.getMessage("economy-sign-rent-description");
         ECONOMY_SIGN_RENT_FOOTER = MessageStorage.MESSAGE_DATA.getMessage("economy-sign-rent-footer");
@@ -627,6 +646,8 @@ public class MessageCache {
         FLAG_DESCRIPTION_CUSTOM_DAMAGE_ANIMALS = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-damage-animals");
         FLAG_DESCRIPTION_CUSTOM_END_CRYSTAL_USE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-endcrystal-use");
         FLAG_DESCRIPTION_CUSTOM_ENDERMAN_GRIEF = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-enderman-grief");
+        FLAG_DESCRIPTION_CUSTOM_ENTITY_ARMORSTAND_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-entity-armorstand-damage");
+        FLAG_DESCRIPTION_CUSTOM_ENTITY_ITEMFRAME_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-entity-itemframe-damage");
         FLAG_DESCRIPTION_CUSTOM_EXP_DROP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-exp-drop");
         FLAG_DESCRIPTION_CUSTOM_FALL_ENTITY_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-fall-entity-damage");
         FLAG_DESCRIPTION_CUSTOM_FALL_PLAYER_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-fall-player-damage");
@@ -653,6 +674,7 @@ public class MessageCache {
         FLAG_DESCRIPTION_CUSTOM_PLAYER_BLOCK_INTERACT = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-block-interact");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-damage");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_ENDERPEARL_INTERACT = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-enderpearl-interact");
+        FLAG_DESCRIPTION_CUSTOM_PLAYER_ENDPORTAL_USE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-endportal-use");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_ENTER = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-enter");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_ENTITY_INTERACT = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-entity-interact");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_EXIT = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-exit");
@@ -661,9 +683,10 @@ public class MessageCache {
         FLAG_DESCRIPTION_CUSTOM_PLAYER_ITEMHANGING_PLACE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-itemhanging-place");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_ITEM_DROP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-item-drop");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_ITEM_PICKUP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-item-pickup");
-        FLAG_DESCRIPTION_CUSTOM_PLAYER_PORTAL_USE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-portal-use");
+        FLAG_DESCRIPTION_CUSTOM_PLAYER_NETHERPORTAL_USE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-netherportal-use");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_TELEPORT_FROM = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-teleport-from");
         FLAG_DESCRIPTION_CUSTOM_PLAYER_TELEPORT_TO = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-teleport-to");
+        FLAG_DESCRIPTION_CUSTOM_PLAYER_VILLAGER_DAMAGE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-player-villager-damage");
         FLAG_DESCRIPTION_CUSTOM_PVP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-pvp");
         FLAG_DESCRIPTION_CUSTOM_RIDE = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-ride");
         FLAG_DESCRIPTION_CUSTOM_SLEEP = MessageStorage.MESSAGE_DATA.getMessage("flag-description-custom-sleep");
@@ -869,7 +892,6 @@ public class MessageCache {
         PERMISSION_PLAYER_VIEW_OTHERS = MessageStorage.MESSAGE_DATA.getMessage("permission-player-view-others");
         PERMISSION_TAX = MessageStorage.MESSAGE_DATA.getMessage("permission-tax");
         PERMISSION_VISUAL_CLAIMS_NEARBY = MessageStorage.MESSAGE_DATA.getMessage("permission-visual-claims-nearby");
-        PLAYERINFO_UI_TITLE = MessageStorage.MESSAGE_DATA.getMessage("playerinfo-ui-title");
         PLUGIN_EVENT_CANCEL = MessageStorage.MESSAGE_DATA.getMessage("plugin-event-cancel");
         PLUGIN_RELOAD = MessageStorage.MESSAGE_DATA.getMessage("plugin-reload");
         PVP_CLAIM_NOT_ALLOWED = MessageStorage.MESSAGE_DATA.getMessage("pvp-claim-not-allowed");

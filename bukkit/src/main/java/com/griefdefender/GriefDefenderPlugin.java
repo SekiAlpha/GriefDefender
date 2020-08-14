@@ -133,6 +133,8 @@ import com.griefdefender.command.CommandClaimTransfer;
 import com.griefdefender.command.CommandClaimUnban;
 import com.griefdefender.command.CommandClaimWorldEdit;
 import com.griefdefender.command.CommandDebug;
+import com.griefdefender.command.CommandGDBlockTransfer;
+import com.griefdefender.command.CommandGDConfirm;
 import com.griefdefender.command.CommandGDReload;
 import com.griefdefender.command.CommandGDVersion;
 import com.griefdefender.command.CommandGiveBlocks;
@@ -191,6 +193,7 @@ import com.griefdefender.listener.EntityEventHandler;
 import com.griefdefender.listener.PlayerEventHandler;
 import com.griefdefender.listener.WorldEventHandler;
 import com.griefdefender.permission.ContextGroupKeys;
+import com.griefdefender.permission.GDPermissionGroup;
 import com.griefdefender.permission.GDPermissionHolder;
 import com.griefdefender.permission.GDPermissionManager;
 import com.griefdefender.permission.GDPermissionUser;
@@ -498,7 +501,7 @@ public class GriefDefenderPlugin {
         }
         instance = this;
         timingManager = TimingManager.of(GDBootstrap.getInstance());
-        DEFAULT_HOLDER = new GDPermissionHolder("default");
+        DEFAULT_HOLDER = new GDPermissionGroup("default");
         PUBLIC_USER = new GDPermissionUser(PUBLIC_UUID, PUBLIC_NAME);
         WORLD_USER = new GDPermissionUser(WORLD_USER_UUID, WORLD_USER_NAME);
         Guice.createInjector(Stage.PRODUCTION, new GriefDefenderImplModule());
@@ -752,6 +755,8 @@ public class GriefDefenderPlugin {
         manager.registerCommand(new CommandClaimWorldEdit());
         manager.registerCommand(new CommandContainerTrust());
         manager.registerCommand(new CommandDebug());
+        manager.registerCommand(new CommandGDBlockTransfer());
+        manager.registerCommand(new CommandGDConfirm());
         manager.registerCommand(new CommandGDReload());
         manager.registerCommand(new CommandGDVersion());
         manager.registerCommand(new CommandGiveBlocks());
